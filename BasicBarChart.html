@@ -34,6 +34,11 @@
         // Sets the chart to the canvas element
         let myChart = document.getElementById('myChart').getContext('2d');
 
+        // Global Options
+        Chart.defaults.font.family = 'Lato';
+        Chart.defaults.font.size = 18;
+        Chart.defaults.color = '#777';
+
         let massPopChart = new Chart(myChart, {
 
             type:'bar',
