@@ -34,12 +34,15 @@
         // Sets the chart to the canvas element
         let myChart = document.getElementById('myChart').getContext('2d');
 
-        let massPopChart = new Chart(myChartm, {
+        let massPopChart = new Chart(myChart, {
 
             type:'bar',
             data: {
-                labels: [],
-                datasets: []
+                labels: ['Escondido', 'Poway', 'Oceanside', 'San Marcos', 'Coronado', 'San Diego'],
+                datasets: [{
+                    label: 'Population',
+                    data: [143911, 47811, 167086, 83781, 18912, 1307402]
+                }]
             },
             options: {}
 
