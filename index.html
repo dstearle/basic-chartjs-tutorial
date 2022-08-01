@@ -18,6 +18,33 @@
 
 	</head>
 
-	<body></body>
+	<body>
+
+        <div class="container">
+
+            <!-- Chart -->
+            <canvas id="myChart"></canvas>
+
+        </div>
+
+    </body>
+
+    <script>
+
+        // Sets the chart to the canvas element
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        let massPopChart = new Chart(myChartm, {
+
+            type:'bar',
+            data: {
+                labels: [],
+                datasets: []
+            },
+            options: {}
+
+        });
+
+    </script>
 
 </html>
